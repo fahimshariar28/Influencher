@@ -69,6 +69,10 @@ body{
   /* width: 440px;
   height: 414px; */
   background-image: url(./images/Circle\ design.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
 }
 
 /* Partner Section Style */
@@ -78,15 +82,15 @@ body{
   margin-bottom: 80px;
 }
 .partner hr{
-  width: 1110px;
   background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
 }
 .partner-image{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 60px;
   align-items: center;
   margin: 40px 0;
+  flex-wrap: wrap;
 }
 
 /* Collection Section */
@@ -149,11 +153,18 @@ body{
 
 }
 .see-more{
-  width: 99px;
-  height: 24px;
+
+  font-weight: 700;
+  font-size: 16px;
   background-color: transparent;
+  color: rgba(224, 44, 109, 0.87);
   border: 0;
-  align: center;
+  margin-top: 50px;
+}
+.see-more-div{
+
+  text-align: right;
+
 }
 
 /* Featured products */
@@ -163,7 +174,7 @@ body{
   margin-bottom: 80px;
   display: flex;
   gap: 90px;
-}\
+}
 .featured-image{
   border-radius: 7px;
 }
@@ -204,4 +215,102 @@ body{
   font-weight: 700;
   font-size: 14px;
   color: #D9DBE1;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 688px) {
+  body {
+    margin: 0;
+  }
+  /* Responsive Header Styles */
+  .header{
+    flex-direction: column;
+  }
+  .site-menu{
+    flex-direction: column;
+  }
+
+  /* Responsive Banner Section */
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0;
+    margin-bottom: 50px;
+    gap: 0;
+  }
+  .banner-image{
+    width: 257px;
+    height: 257px;
+    margin: 0 50px;
+  }
+  .banner-image img{
+    width: 100%;
+  }
+  .banner-info{
+    text-align: center;
+  }
+  .banner-title{
+    font-weight: 700;
+    font-size: 28px;
+  }
+  .banner-description{
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive Partner Section Style */
+
+  .partner{
+    margin: 0 20px;
+  }
+  .partner hr{
+    display: none;
+  }
+
+  /* Responsive Collection Section Style */
+
+  .collection-section{
+    margin: 0;
+  }
+  .collection{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 0px;
+    margin: 0 20px;
+}
+  .section-title{
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .product-description{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .product-name{
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  
+  /* Featured Section Style */
+
+  .featured{
+    margin: 0;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .featured-title{
+    font-weight: 700;
+    font-size: 24px;
+  }
+  .featured-description{
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .featured-image img{
+    width: 299px;
+    height: 188px;
+    margin: 0 30px;
+  }  
 }
