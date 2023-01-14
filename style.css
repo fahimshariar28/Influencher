@@ -69,3 +69,89 @@ body{
   height: 414px; */
   background-image: url(./images/Circle\ design.svg);
 }
+
+/* Partner Section Style */
+
+.partner{
+  margin: 0 160px;
+  margin-bottom: 80px;
+}
+.partner hr{
+  width: 1110px;
+  background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+.partner-image{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  margin: 40px 0;
+}
+
+/* Collection Section */
+
+.collection-section{
+  margin: 0 195px;
+}
+.section-title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  color: #3A3A3A;
+}
+.collection{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.products{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  /* width: 329px;
+  height: 476px; */
+}
+.product-image{
+  width: 300px;
+  height: 256px;
+  margin: 17px 15px;
+
+}
+.product-name{
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191F;
+  margin-left: 15px;
+  margin-bottom: 6px;
+}
+.product-price{
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 15px;
+
+}
+.rattings{
+  font-weight: 700;
+  font-size: 14px;
+  color: #5E6366;
+  margin-left: 15px;
+
+}
+.fa-star, .fa-star-half-stroke{
+  color: #FB8200;
+}
+.product-description{
+  font-weight: 700;
+  font-size: 14px;
+  color: #787885;
+  margin-left: 15px;
+
+}
+.see-more{
+  width: 99px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  align: center;
+}
