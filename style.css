@@ -1,0 +1,71 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Common Styles */
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header style */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 120px;
+  align-items: center;
+}
+.header-title{
+  font-weight: 700;
+  font-size: 24px;
+  color: #3A3A3A;
+}
+.site-menu{
+  display: flex;
+  gap: 34px;
+}
+.site-menu li{
+  list-style: none;
+}
+.site-menu a{
+  text-decoration: none;
+    font-weight: 600;
+  font-size: 16px;
+  color: #3A3A3A;
+}
+
+/* Main Section Style */
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  gap: 130px;
+  margin: 0 120px;
+  margin-bottom: 80px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 52px;
+  color: #3A3A3A;
+}
+.banner-description{
+  font-weight: 600;
+  font-size: 16px;
+  color: #3A3A3A;
+}
+.banner-button{
+  width: 196px;
+  height: 44px;
+  background: #E02C6D;
+  border: 0;
+  border-radius: 41px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFF;
+}
+.banner-image img{
+  /* width: 440px;
+  height: 414px; */
+  background-image: url(./images/Circle\ design.svg);
+}
