@@ -5,6 +5,7 @@
 /* Common Styles */
 
 body{
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -92,6 +93,7 @@ body{
 
 .collection-section{
   margin: 0 195px;
+  margin-bottom: 80px;
 }
 .section-title{
   text-align: center;
@@ -108,8 +110,6 @@ body{
 .products{
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-  /* width: 329px;
-  height: 476px; */
 }
 .product-image{
   width: 300px;
@@ -154,4 +154,54 @@ body{
   background-color: transparent;
   border: 0;
   align: center;
+}
+
+/* Featured products */
+
+.featured{
+  margin: 0 165px;
+  margin-bottom: 80px;
+  display: flex;
+  gap: 90px;
+}\
+.featured-image{
+  border-radius: 7px;
+}
+.featured-title{
+  font-weight: 700;
+  font-size: 38px;
+  color: #0A0826;
+}
+.featured-description{
+  font-weight: 700;
+  font-size: 16px;
+  color: #6C6C6C;
+}
+.featured-button{
+  width: 155px;
+  height: 44px;
+  background: #E02C6D;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFF;
+}
+
+/* Footer Styles */
+
+.footer{
+  background-color: #0A0826;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-title{
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFF;
+}
+.footer-description, .footer-description2{
+  font-weight: 700;
+  font-size: 14px;
+  color: #D9DBE1;
 }
